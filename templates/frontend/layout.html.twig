@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>{% block title %}{{ pageTitle }}{% endblock %}</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<ul class="menu">
+    <li><a href="/programme">Programmblöcke</a></li>
+    <li><a href="/admin">Adminbereich</a></li>
+    <li><a href="/impressum">Impressum</a></li>
+    <li><a href="/dokumentation">Dokumentation</a></li>
+</ul>
+
+<div class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>

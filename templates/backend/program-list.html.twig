@@ -1,0 +1,16 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+    <h1>Programme</h1>
+
+    <p>
+        Hier finden Sie alle Programme.
+    </p>
+
+    {% if programData %}
+        {# Do someting with the data #}
+    {% else %}
+        <p>
+            Es liegen keine Programme vor.
+        </p>
+    {% endif %}
+{% endblock %}
